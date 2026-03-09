@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagran</title>
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/dcit-web.appspot.com/o/a2main.css.css?alt=media&token=372ab3f9-ae18-4058-83ce-2253593a0555">
+
+    <style>
+    body {
+        /* must be full width
+        must have no spacing outside of its border in any direction
+        must have no spacing between its content and border in any direction
+        must be coloured #fafafa */
+        font-family: Arial, sans-serif;
+        max-width: 100%;
+        background-color: #fafafa;
+        margin: 0;
+        padding: auto;
+
+    }
+    #stories {
+        /* <!--Must be 90px tall
+        Must be as long as 70% of the Viewport
+        Must have a space of -5px outside the top of the element's border
+        Must be spaced automatically outside the left of the element's border
+        Must be spaced automatically outside the right of the element's border
+        Must have a 1px solid border coloured #b5b5b5;
+        Must have the corner of its borders curved by 2px
+        Must have a space of 30px between the element's conten t and left border.--> */
+        height: 90px;
+        width: 70vw;
+        border-radius: 2px;
+        padding-left: 30px; 
+        display: flex;
+        margin: -5px auto 0 auto;
+        background-color: #fff;
+        border: 1px solid #b5b5b5;
+        border-radius: 2px;
+    }
+   .user{
+    /* Should be as long as 18% the of its parent's width
+    Should be displayed as an inline block */
+        width: 18%;
+        display: inline-block;
+        p {
+            /* Should be centre aligned
+            Should have no spacing outside of its borders
+            Should be in "Lucida Sans Unicode" font
+            Should have a weight of 100
+            Should have be in smaller font */
+            text-align: center;
+            font-family: "Lucida Sans Unicode";
+            font-weight: 100;
+            font-size: 12px;
+        }
+    .post{
+        header{
+            /* Should be coloured white
+            Should be 50px tall
+            Should be sized according to its border
+            Should inherit its parents width
+            Should have a spacing of 5px between its content and border
+            Should have a 1px solid border on the bottom coloured #b5b5b5 */
+            background-color: white;
+            height: 50px;
+            width: inherit;
+            padding: 5px;
+            border-bottom: 1px solid #b5b5b5;
+        }
+    }
+   }
+
+   nav {
+    /* should be displayed as an inline-block
+    should be coloured white
+    must be full width
+    must be 54 pixels tall
+    must have a solid border below it that is 1 pixel thick with the colour #e5e5e5 */
+    display: inline-block;
+    background-color: white;
+    width: 100%;
+    height: 54px;
+    border-bottom: 1px solid #e5e5e5;
+
+    #actions{
+    /* must be 40px tall
+    must be positioned relative to is parent
+    must be positioned 0px to the right of its parent */
+    height: 40px;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    }
+
+   #logo{
+    /* must be 40px tall
+    must positioned relative to its parent */
+    display: inline-block;
+    height: 40px;
+    position: relative;
+   } 
+
+    input[type="text"]{
+        /* must be 25px tall
+        must be positioned relative to is parent
+        must be have a width that spans 30% of the viewport width
+        must be positioned 35vw to the left
+        must be positioned 35vw to the right
+        must be coloured #fafafa
+        must have its text-centred
+        must have a solid #b5b5b5 coloured 1px thick border rounded with a radius of 3px */
+    height: 25px;
+    position: relative;
+    width: 30%vw;
+    left: 35vw;
+    right: 35vw;
+    background-color: #fafafa;
+    text-align: center;
+    border: 1px solid #b5b5b5;
+    border-radius: 3px;
+
+    }
+    }
+
+
+    
+    </style>
+</head>
+<body>
+    <nav>
+       
+        <img id="logo" src="img/instagran.png" alt="instagran logo" >
+    
+        <input type="text" placeholder="search"/>
+
+        <img id="actions" src="img/actions.png" alt="actions" >
+    </nav>
+
+    <section id="stories">
+        <div class="user" id="mydiv">
+            <img src="img/gran1.jpg" >
+            <p class="userstory">Elma</p>
+        </div>
+        <div class="user">
+            <img src="img/gran2.jpg" >
+            <p class="userstory">Betty</p>
+        </div>
+        <div class="user">
+            <img src="img/gran3.jpg" >
+            <p class="userstory">Sandra</p>
+        </div>
+        <div class="user">
+            <img src="img/gran4.jpg" >
+            <p class="userstory">Delores</p>
+        </div>
+
+        <div class="user">
+            <img src="img/gran5.jpg" >
+            <p class="userstory">Karen</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <div class="post-header">
+            <img src="img/gran1.jpg"><span>Elma</span>
+        </div>
+        <div>
+            <img class="post-image" src="https://www.ramp.space/assets/uploads/crops/standard.a87a1f62.nic_cage3.jpg" alt="cage image">
+        </div>
+    </section>
+
+    <footer></footer>
+</body>
+</html>
